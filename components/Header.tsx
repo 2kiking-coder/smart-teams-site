@@ -47,22 +47,17 @@ export default function Header() {
     <>
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#555a63]/95 backdrop-blur-md">
         <div className="mx-auto flex h-[68px] max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <a
-            href={T2L_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center gap-3"
-          >
-            <span className="text-[13px] font-extrabold tracking-tight text-[#ff4d3d]">
-              T2L
-            </span>
-            <span className="text-[15px] font-extrabold tracking-tight text-white sm:text-[16px]">
-              SMART TEAMS
-            </span>
-            <span className="hidden text-[13px] font-medium text-white/70 md:inline-block">
-              Microsoft 365 연동 (Enterprise)
-            </span>
-          </a>
+          <Link href="/" className="flex items-center gap-3">
+  <span className="text-[13px] font-extrabold tracking-tight text-[#ff4d3d]">
+    T2L
+  </span>
+  <span className="text-[15px] font-extrabold tracking-tight text-white sm:text-[16px]">
+    SMART TEAMS
+  </span>
+  <span className="hidden text-[13px] font-medium text-white/70 md:inline-block">
+    Microsoft 365 연동 (Enterprise)
+  </span>
+</Link>
 
           <nav className="hidden items-center gap-2 lg:flex">
             {NAV.map((item) =>
